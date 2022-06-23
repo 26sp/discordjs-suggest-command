@@ -19,15 +19,12 @@ const prefix = "!" // Remove this line if you have a prefix...
 // Sample 2:
 // Just copy and paste the whole thing in a new file (preferrably suggest.js)
 const Discord = require ("discord.js")
-const { version } = require('../../package.json');
-const ms = require('pretty-ms');
-const { version: discordjsVersion } = require('discord.js');
 module.exports = {
 config: {
-  name: "botinfo",
-  category: "info",
-  aliases: ['binfo', 'botstats', 'stats', 'sparkfirebot'],
-  description: 'Check\'s bot\'s status',
+  name: "suggest",
+  category: "Feedback",
+  aliases: ['suggest'],
+  description: 'Suggest something',
 },
   run: async (bot, message, args) => {
      message.reply(`Thank you ${message.author.username}!\n\nNote: Abusing this command will get you bot banned`)
